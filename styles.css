@@ -1,0 +1,347 @@
+/* Importing Google Fonts /////////////////////////////////////////////////////////////////////////////////////////*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* Base styles //////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color:#508D4E;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header and Navigation styles /////////////////////////////////////////////////////////////*/
+header {
+    background-color: #1A5319;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-section .name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color:#D6EFD8;
+}
+
+.left-section .title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 5px;
+}
+.right-section .title{
+    font-size: large;
+}
+.right-section a {
+    font-family: 'Montserrat', sans-serif;
+    padding: 14px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.right-section a:hover {
+    background-color:D6EFD8;
+    color: #fff;
+}
+
+/* Home section styles ///////////////////////////////////////////////*/
+.home-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.image-content {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+    text-align: right;
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Section styles ///////////////////////////////////////////////////////////////////////*/
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color:#1A5319;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1rem;
+}
+
+/* Contact section styles ////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#contact {
+    background-color:rgb(32, 32, 32);
+    padding: 60px 20px;
+    border-radius: 10px;
+}
+
+#contact h2 {
+    color: #80AF81;
+    margin-bottom: 30px;
+}
+
+#contact p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+#contact a {
+    color: #80AF81;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    color: #fff;
+}
+
+/* Skills and Projects section styles ///////////////////////////////////////////////////////////////////////////////////////////*/
+.skills, .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skills div, .projects div {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background-color: #444;
+    border: 1px solid #555;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.skills div:hover, .projects div:hover {
+    transform: scale(1.05);
+    background-color: #555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.skills i, .projects i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #508D4E;
+}
+
+/* Footer styles //////////////////////////////////////////////////////////////////////////////*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    margin-top: 60px;
+    border-top: 1px solid #555;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #80AF81;
+}
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+#education {
+    animation: slideInFromLeft 1.5s ease-out, fadeIn 1.5s ease-out;
+    background-color: #222;
+    padding: 60px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+#education h2 {
+    color:#80AF81;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+#education p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+#education .education-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+#education .education-item:hover {
+    transform: scale(1.05);
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#education .education-item h3 {
+    font-size: 1.5rem;
+    color: #80AF81;
+    margin-bottom: 10px;
+}
+
+#education .education-item p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+/* Projects Section Styling */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-item {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #444;
+    border: 1px solid #555;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    color: #fff; 
+    text-align: left;
+    animation: slideUp 1.5s ease-out;
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    color: #80AF81;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+    background-color: #555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+   /* @keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}  */
+
+/* ///////////////////////////////////////////////////////////////// */
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color:#1A5319;
+    border-top: 1px solid #333;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.social-links {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.footer-content p a {
+    color: #80AF81;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-content p a:hover {
+    color: #fff;
+}
+
